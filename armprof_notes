@@ -1,6 +1,16 @@
 https://www.armprof.ru/catalog/zadvizhki-klinovye/
 https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/
 
+-----------------------
+добавить файлы:
+opensans-extrabold.woff
+opensans-extrabold.woff2
+
+icon-arrow-down.png
+icon-cart.png
+icon-compare.png
+icon-favorite.png
+
 ==================================
 2020.07.05
 ==================================
@@ -15,6 +25,117 @@ card page
     </div>
     <a href="javascript:void(0);" onclick="print();" class="print">Печать</a>
 </div>
+
+Убрать блоки 
+<div class="media_left_menu_btn">Меню</div>
+и 
+<aside class="left-bar">
+
+Убрать обертку <div class="clearfix"> над <div class="produkt-wrp clearfix" itemscope itemtype="http://schema.org/Product">
+
+В <div class="produkt-wrp clearfix" itemscope itemtype="http://schema.org/Product"> убрать класс clearfix
+
+В <div class="produkt-wrp-top clearfix"> убрать класс clearfix
+
+Убрать обертку <div class="produkt-left left"> 
+
+Убрать обертку <div class="produkt-right">
+
+В <div class="produkt-spec produkt-right"> убрать класс produkt-right
+
+В <div class="produkt-spec-line clearfix"> убрать класс clearfix
+
+<p class="produkt-spec-head">Технические характеристики</p> перенести внутрь блока  <div class="produkt-spec">
+
+В  <div class="garanty-block"> поменять класс на produkt-garanty
+
+Убрать блок <p class='produkt-spec-head'>ПРИСОЕДИНИТЕЛЬНЫЙ РАЗМЕР</p>
+
+В  <div class="clearfix produkt-price-wrp produkt-right"> убрать классы clearfix и produkt-right
+
+Убрать блок <div class="ot produkt-right">Цена: </div>
+
+После <div class="produkt-price-wrp"> добавить <div class="produkt-btns">
+
+Перенести <a id="PredCont" onclick="yaCounter18939763.reachGoal('pre-order-open'); return false" class="checkout-btn right new_check">Заказать</a> в <div class="produkt-bnts"> из <div class="numer_button_block">
+
+Убрать блок <div class="numer_button_block">
+
+Убрать блоки 
+    <div class="clear"></div>
+    <div class="clear"></div>
+
+
+В <a href="/images/items/DOMEX-F4-RC-DN40-DN300-passport.pdf" target="_blank" class="download-price fll text-left mrl w60">Скачать паспорт</a> добавить класс  download-price--passport
+
+В <a href="/oprosnye-listy/zadvizhki-klinovye.doc" target="_blank" class="download-price download-price-blue flr text-left mrl">Скачать опросный лист</a>добавить класс  download-price--quest
+
+В <div class="slider-for"> заменить класс на produkt-slider-for
+В <div class="slider-nav"> заменить класс на produkt-slider-nav
+
+
+В produkt-slider-nav:
+В <div class="slide" style='padding-right: 10px;'> убрать style
+Добавить внутреннюю обертку <div class="slide-inner"> :
+
+<div class="slide">
+    <div class="slide-inner">
+        ...
+    </div>
+</div>
+
+В produkt-slider-for:
+У iframe убать style='width:280px;height:230px'
+Добавить внутреннюю обертку <div class="slide-inner"> :
+
+<div class="slide">
+    <div class="slide-inner embed-responsive">
+        ...
+    </div>
+</div>
+
+iframe в слайде produkt-slider-for обернуть в <div class="embed-responsive">:
+
+<div class="slide">
+    <div class="slide-inner">
+        <div class="embed-responsive">
+            <iframe src="//www.youtube.com/embed/P7vNCiZ4MPE" allowfullscreen="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+В <div class="produkt-spec-line clearfix"> убрать clearfix:
+<div class="produkt-spec-line">
+
+Убрать класс w135 в <p class="produkt-price w135" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer"> 
+
+Заменить 
+<span class="sum"><span id='dn_price'>от 7 223 ₽</span></span>
+на
+<span>Цена:</span>
+<span id='dn_price' class="sum">от 7 223 ₽</span>
+
+Перенести блок;
+<p class="produkt-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+    ...
+</p>
+Поставить его перед 
+<div class="select_dn">...</div>
+
+
+Можно ли в Скачать паспорт и Скачать опросный лист сделать перенос строки в html после слова 'Скачать'?
+
+Убрать класс right и new_check в <a id="PredCont" onclick="yaCounter18939763.reachGoal('pre-order-open'); return false" class="checkout-btn right new_check">Заказать</a>
+
+Убрать <b></b> и заменить АрмПроф на ArmProf 
+в <a id="Contact_dop" onclick="return false" href="#" class="qwestion-btn right"><b>Обратная связь</b> с АрмПроф</a>
+
+В <div class="category-wrp category_products_wrap"> добавить класс category-products--grid
+
+Внутрь <div class="category-wrp category_products_wrap category-products--grid"> добавить обертку category-products-inner:
+
+<div class="category-wrp category_products_wrap category-products--grid">
+    <div class="category-products-inner">
 
 ==================================
 2020.06.23
@@ -41,6 +162,16 @@ header_right_block на header-phones-block
 
 Блок download-price перенести в  header-cart-block после <ul class="action-btn-list">..</ul>
 Обернуть текст внутри download-price в span
+
+Добавить в download-price класс download-red-after :
+
+<a href="/price_list/armprof_price.xls" class="download-price download-red-after" onclick="yaCounter18939763.reachGoal('price_download'); return true;"><span>Скачать прайс ArmProf</span></a>
+
+В <a href="/oprosnye-listy/zadvizhki-klinovye.doc" target="_blank" class="download-price download-price--quest download-price-blue flr text-left mrl">Скачать опросный лист</a>
+убрать классы flr text-left mrl
+
+В <a href="/images/items/DOMEX-F4-RC-DN40-DN300-passport.pdf" target="_blank" class="download-price download-price--passport fll text-left mrl w60">Скачать паспорт</a>
+убрать классы fll text-left mrl w60
 
 В header-menu-block в ul добавить класс header-menu-main
 
@@ -89,6 +220,19 @@ header_right_block на header-phones-block
 В category_products_wrap добавить category-products-inner:
 <div class="category_products_wrap">
 	<div class="category-products-inner">
+
+В call-block поменять местами <a></a> и <p></p> :
+<div class="call-block">
+    <p><b>Свяжитесь с нами</b> прямо сейчас</p>
+    <a id="Contact" onclick="yaCounter18939763.reachGoal('footer-contact-open'); return false" href="#" class="recall-btn btn btn--main">
+    Обратная связь с АрмПроф</a>
+</div>
+
+Добавить классы btn btn--main, убрать класс right и убать тег <b> в 
+<a id="Contact" onclick="yaCounter18939763.reachGoal('footer-contact-open'); return false" href="#" class="recall-btn right"><b>Обратная связь</b> с АрмПроф</a> 
+Должно получиться так:
+<a id="Contact" onclick="yaCounter18939763.reachGoal('footer-contact-open'); return false" href="#" class="recall-btn btn btn--main">Обратная связь с АрмПроф</a>
+
 Добавить класс btn--main в <input type="submit" value="Подобрать" class="recall-btn submit_fform btn--main">
 
 <div class="cite-block clearfix"> 
