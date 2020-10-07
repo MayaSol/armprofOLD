@@ -1,3 +1,7 @@
+/*! https://github.com/ganlanyuan/tiny-slider*/
+.tns-outer{padding:0 !important}.tns-outer [hidden]{display:none !important}.tns-outer [aria-controls],.tns-outer [data-action]{cursor:pointer}.tns-slider{-webkit-transition:all 0s;-moz-transition:all 0s;transition:all 0s}.tns-slider>.tns-item{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.tns-horizontal.tns-subpixel{white-space:nowrap}.tns-horizontal.tns-subpixel>.tns-item{display:inline-block;vertical-align:top;white-space:normal}.tns-horizontal.tns-no-subpixel:after{content:'';display:table;clear:both}.tns-horizontal.tns-no-subpixel>.tns-item{float:left}.tns-horizontal.tns-carousel.tns-no-subpixel>.tns-item{margin-right:-100%}.tns-no-calc{position:relative;left:0}.tns-gallery{position:relative;left:0;min-height:1px}.tns-gallery>.tns-item{position:absolute;left:-100%;-webkit-transition:transform 0s, opacity 0s;-moz-transition:transform 0s, opacity 0s;transition:transform 0s, opacity 0s}.tns-gallery>.tns-slide-active{position:relative;left:auto !important}.tns-gallery>.tns-moving{-webkit-transition:all 0.25s;-moz-transition:all 0.25s;transition:all 0.25s}.tns-autowidth{display:inline-block}.tns-lazy-img{-webkit-transition:opacity 0.6s;-moz-transition:opacity 0.6s;transition:opacity 0.6s;opacity:0.6}.tns-lazy-img.tns-complete{opacity:1}.tns-ah{-webkit-transition:height 0s;-moz-transition:height 0s;transition:height 0s}.tns-ovh{overflow:hidden}.tns-visually-hidden{position:absolute;left:-10000em}.tns-transparent{opacity:0;visibility:hidden}.tns-fadeIn{opacity:1;filter:alpha(opacity=100);z-index:0}.tns-normal,.tns-fadeOut{opacity:0;filter:alpha(opacity=0);z-index:-1}.tns-vpfix{white-space:nowrap}.tns-vpfix>div,.tns-vpfix>li{display:inline-block}.tns-t-subp2{margin:0 auto;width:310px;position:relative;height:10px;overflow:hidden}.tns-t-ct{width:2333.3333333%;width:-webkit-calc(100% * 70 / 3);width:-moz-calc(100% * 70 / 3);width:calc(100% * 70 / 3);position:absolute;right:0}.tns-t-ct:after{content:'';display:table;clear:both}.tns-t-ct>div{width:1.4285714%;width:-webkit-calc(100% / 70);width:-moz-calc(100% / 70);width:calc(100% / 70);height:10px;float:left}
+
+/*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
 html,
 body,
 div,
@@ -95,14 +99,6 @@ html {
     height: 100%;
 }
 
-/*!!!*/
-/*body:before {
-    position: absolute;
-    left: -39px;
-    top: 0;
-    content: url('file:///home/helloworld/Work/armprof/img/temp/card.jpg');
-    opacity: 0.4;
-}*/
 
 img,
 fieldset,
@@ -154,26 +150,26 @@ a:focus {
 }
 
 .btn {
-  box-sizing: border-box;
-  display: inline-block;
-  max-width: 100%;
-  margin: 0;
-  border: 0;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  user-select: none;
-  text-align: center;
-  font-size: 1em;
-  font-family: inherit;
-  line-height: normal;
-  text-decoration: none;
-  text-transform: none;
-  color: inherit;
-  background-color: transparent;
-  background-image: none;
-  cursor: pointer;
-  overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    user-select: none;
+    text-align: center;
+    font-size: 1em;
+    font-family: inherit;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: none;
+    color: inherit;
+    background-color: transparent;
+    background-image: none;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .btn--plain {
@@ -206,19 +202,19 @@ a:focus {
 }
 
 .btn--list {
-    background-image: url(file:///home/helloworld/Work/armprof/img/new_img/list-view.png);
+    background-image: url(../img/new_img/list-view.png);
 }
 
 .btn--list:hover {
-    background-image: url(file:///home/helloworld/Work/armprof/img/new_img/list-view-hover.png);
+    background-image: url(../img/new_img/list-view-hover.png);
 }
 
 .btn--grid {
-    background-image: url(file:///home/helloworld/Work/armprof/img/new_img/grid-view.png);
+    background-image: url(../img/new_img/grid-view.png);
 }
 
 .btn--grid:hover {
-    background-image: url(file:///home/helloworld/Work/armprof/img/new_img/grid-view-hover.png);
+    background-image: url(../img/new_img/grid-view-hover.png);
 }
 
 .btn--main {
@@ -241,6 +237,27 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: -0.7px;
+}
+
+.btn--close {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/new_img/icon-close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn--close:hover {
+    background-image: url('../img/new_img/icon-close-red.png');
+}
+
+.btn--link {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #333;
+    text-transform: uppercase;
+    border: solid 1px #ecedf1;
 }
 
 .border-color-red {
@@ -271,67 +288,61 @@ body {
     line-height: 1.4;
 }
 
-/*!!!!! исправить пути !!!>*/
-
 @font-face {
-    font-family: als_rublregular;
-    src: url("file:///home/helloworld/Work/armprof/fonts/alsrubl.eot");
-    src: url("fonts/alsrubl-1.eot") format("embedded-opentype"), url("file:///home/helloworld/Work/armprof/fonts/alsrubl.woff") format("woff"), url("fonts/alsrubl-1.txt") format("truetype");
+    font-family: open_sansregular;
+    src: url("fonts/opensans-regular.woff2") format("woff2"),
+    url("fonts/opensans-regular.woff") format("woff");  
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: open_sansregular;
-/*    src: url("fonts/opensans-regular-1.eot") format("embedded-opentype"), 
-*/  
-    src: url("file:///home/helloworld/Work/armprof/fonts/opensans-regular.woff2") format("woff2"),
-    url("file:///home/helloworld/Work/armprof/fonts/opensans-regular.woff") format("woff");  
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: open_sansregular;
-    src: url("fonts/opensans-extrabold.eot");
-    src: url("fonts/opensans-extrabold-1.eot") format("embedded-opentype"), url("fonts/opensans-extrabold.txt") format("woff"), url("fonts/opensans-extrabold-1.txt") format("truetype");
+    src: url("fonts/opensans-extrabold.woff2") format("woff2"),
+    url("fonts/opensans-extrabold.woff") format("woff");  
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: open_sansregular;
-    src: url("file:///home/helloworld/Work/armprof/fonts/opensans-extrabold.woff2") format("woff2"),
-    url("file:///home/helloworld/Work/armprof/fonts/opensans-extrabold.woff") format("woff");  
+    src: url("fonts/opensans-extrabold.woff2") format("woff2"),
+    url("fonts/opensans-extrabold.woff") format("woff");  
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: open_sansregular;
-/*    src: url("fonts/opensans-semibold.eot");
-    src: url("fonts/opensans-semibold-1.eot") format("embedded-opentype"), url("fonts/opensans-semibold.txt") format("woff"), url("fonts/opensans-semibold-1.txt") format("truetype");
-*/    
-    src: url("file:///home/helloworld/Work/armprof/fonts/opensans-bold.woff2") format("woff2");  
+    src: url("fonts/opensans-bold.woff2") format("woff2"),
+    url("fonts/opensans-bold.woff") format("woff");  
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: open_sansregular;
-    src: url("file:///home/helloworld/Work/armprof/fonts/opensans-semibold.woff2") format("woff2");  
+    src: url("fonts/opensans-semibold.woff2") format("woff2"),
+    url("fonts/opensans-semibold.woff") format("woff");  
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: open_sansregular;
-    src: url("fonts/opensans-light.eot");
-    src: url("fonts/opensans-light-1.eot") format("embedded-opentype"), url("file:///home/helloworld/Work/armprof/fonts/opensans-light.woff") format("woff"), url("fonts/opensans-light-1.txt") format("truetype");
+    src: url("fonts/opensans-light.woff2") format("woff2"),
+    url("fonts/opensans-light.woff") format("woff");  
     font-weight: 300;
     font-style: normal;
 }
 
+@font-face {
+    font-family: HelveticaNeueMedium-rubl;
+    src: url("fonts/HelveticaNeueMedium-rubl.woff2") format("woff2"),
+    url("fonts/HelveticaNeueMedium-rubl.woff") format("woff");  
+    font-weight: 500;
+    font-style: normal;
+}
 
 
 body {
@@ -352,7 +363,8 @@ body {
 header,
 .red-menu-inner,
 .category-top,
-.produkt-wrp {
+.produkt-wrp,
+.category-products {
     margin: 0 auto;
     width: 1230px;
     position: relative;
@@ -371,12 +383,11 @@ header,
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 10px;
 }
 
 .category-top h1 {
     flex-basis: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     color: #333333;
     font-weight: 600;
     letter-spacing: -2px;
@@ -643,7 +654,7 @@ a:hover {
     float: right;
     margin-right: 15px;
     margin-top: 13px;
-    background: url('../img/icons.png') 0 -778px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -778px no-repeat;
     width: 13px;
     height: 13px;
 }
@@ -667,7 +678,250 @@ a:hover {
     line-height: 1em;
 }
 
-.top-sliders {
+/*Слайдер на главной*/
+
+.tns-outer {
+    position: relative;
+}
+
+.tns-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-slider-wrp {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.main-slider-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+
+.main-slider-arrow {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background-color: transparent;
+    background-image: url('../img/new_img/icon-arrow-white-left.png');
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+    border: 2px solid rgba(255,255,255,0.32);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.main-slider-prev {
+    left: 40px;
+}
+
+.main-slider-next {
+    right: 40px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+
+.main-slider {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+/*    width: 1149px;
+*/    min-height: 360px;
+    background-color: #0d4687;
+    box-sizing: border-box;
+}
+
+.main-slider-item {
+    display: none;
+}
+
+.main-slider-video {
+    position: relative;
+}
+
+.main-slider-video::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: url('../video_new/domex_present.jpg');
+    background-size: contain;
+    z-index: 5;
+}
+
+.main-slider-video.playing::after {
+    display: none;
+}
+
+.main-slider-content {
+    position: relative;
+    opacity: 0;
+    max-height: 0;
+}
+
+.main-slider-video.playing ~ .main-slider-play {
+    display: none;
+}
+
+.main-slider-play {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 0px 12px rgba(255,255,255,0.32);
+    -moz-box-shadow: 0px 0px 0px 12px rgba(255,255,255,0.32);
+    box-shadow: 0px 0px 0px 12px rgba(255,255,255,0.32);
+}
+
+.main-slider-play::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 55%;
+    border-style: solid;
+    border-width: 12px 0 12px 15px;
+    border-color: transparent transparent transparent #ff0000;
+    transform: translate(-50%, -50%);
+}
+
+.main-slider-preview {
+    max-height: 500px;
+    min-height: 270px;
+    max-width: 300px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-slider-img {
+    align-self: flex-end;
+    width: 250px;
+    height: 180px;
+}
+
+.main-slider-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.main-slider-text {
+    align-self: flex-end;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    color: #fff;
+    text-align: left;
+    white-space: pre-line;
+}
+
+.main-slider.tns-slider .main-slider-item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.main-slider.tns-slider .main-slider-item.tns-slide-active {
+    justify-content: flex-end;
+}
+
+.main-slider .tns-slide-active .main-slider-item-inner {
+    margin-right: 30px;
+}
+
+
+
+/*Средний слайд*/
+
+.main-slider .tns-slide-active + .tns-slide-active .main-slider-content {
+    opacity: 1;
+    max-height: 500px;
+    width: 480px;
+    transition-property: opacity, max-height;
+    transition-delay: 0.6s, 0.6s;
+    transition-duration: 0.3s, 0s;
+}
+
+.main-slider .tns-slide-active + .tns-slide-active .main-slider-preview {
+    opacity: 0;
+    max-height: 0;
+    min-height: 0;
+    transition-property: opacity. max-height;
+    transition-delay: 0.3s, 0.3s;
+    transition-duration: 0.3s, 0.3s;
+}
+
+.main-slider .tns-slide-active + .tns-slide-active {
+    justify-content: center;
+}
+
+.main-slider .tns-slide-active + .tns-slide-active .main-slider-item-inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+}
+
+/*Последний слайд*/
+
+.main-slider .tns-slide-active + .tns-slide-active + .tns-slide-active {
+    justify-content: flex-start;
+    margin-right: 0;
+}
+
+.main-slider .tns-slide-active + .tns-slide-active + .tns-slide-active .main-slider-item-inner {
+    margin-left: 30px;
+}
+
+.main-slider .tns-slide-active + .tns-slide-active + .tns-slide-active .main-slider-content {
+    opacity: 0;
+    max-height: 0;
+    width: auto;
+    transition-property: none;
+}
+
+.main-slider .tns-slide-active + .tns-slide-active + .tns-slide-active .main-slider-preview {
+    opacity: 1;
+    max-height: 500px;
+    min-height: 270px;
+    transition-property: none;
+}
+
+
+/*.top-sliders {
     position: relative;
     height: 430px;
     margin-bottom: 20px;
@@ -679,7 +933,7 @@ a:hover {
     top: 0px;
     width: 100%;
     height: 380px;
-    background: #1a5a96 url("../img/maket-img/main-slider-bg.jpeg") 50% 0 no-repeat;
+    background: #1a5a96 url("https://www.armprof.ru/design/default/img/maket-img/main-slider-bg.jpeg") 50% 0 no-repeat;
 }
 
 .top-sliders .top-slider-content {
@@ -690,7 +944,7 @@ a:hover {
     position: relative;
     padding: 40px 0;
 }
-
+*/
 .video-wrp {
     max-width: 1025px;
     min-width: 991px;
@@ -736,7 +990,7 @@ a:hover {
 
 .video-left-txt .video-left-name {
     word-wrap: break-word;
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     font-size: 26px;
     line-height: 35px;
@@ -787,7 +1041,7 @@ a:hover {
 }
 
 #video_list_slider .video-block a .video-item-play-ico {
-    background: url('../img/icons.png') 0 -407px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -407px no-repeat;
     width: 53px;
     height: 53px;
     display: inline-block;
@@ -801,7 +1055,7 @@ a:hover {
     margin-left: 73px;
     line-height: 17px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     padding-right: 25px;
 }
@@ -883,7 +1137,7 @@ a:hover {
     cursor: pointer;
     left: 50%;
     top: 50%;
-    background: url('../img/icons.png') 0 -95px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -95px no-repeat;
     width: 85px;
     height: 85px;
     margin: -43px 0 0 -43px;
@@ -923,7 +1177,7 @@ a:hover {
 
 #video_frame #video_frame_loader {
     display: block;
-    background: transparent url(../img/maket-img/ajax-loader.gif) 50% 50% no-repeat;
+    background: transparent url(https://www.armprof.ru/design/default/img/maket-img/ajax-loader.gif) 50% 50% no-repeat;
     height: 237px;
     width: 420px;
 }
@@ -985,7 +1239,7 @@ a:hover {
 }
 
 .cat-slider-wrp .cat-slide-art b {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -1061,7 +1315,7 @@ a:hover {
 
 .contact-popup-close {
     display: block;
-    background: url("../img/icon-close.png") no-repeat 0 0;
+    background: url("https://www.armprof.ru/design/default/img/icon-close.png") no-repeat 0 0;
     width: 14px;
     height: 13px;
     position: absolute;
@@ -1106,7 +1360,7 @@ input[type="text"].contact-popup-name {
 
 .del {
     display: block;
-    background: url("../img/icon-del.png") no-repeat 0 0;
+    background: url("https://www.armprof.ru/design/default/img/icon-del.png") no-repeat 0 0;
     width: 17px;
     height: 18px;
     float: right;
@@ -1132,7 +1386,7 @@ input[type="text"].contact-popup-company {
 }
 
 textarea.contact-popup-text {
-    background: url("../img/bg-contect-popup-textarea.png") repeat-y 0 0;
+    background: url("https://www.armprof.ru/design/default/img/bg-contect-popup-textarea.png") repeat-y 0 0;
     border: none;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1149,7 +1403,7 @@ textarea.contact-popup-text {
 }
 
 .contact-popup-submit {
-    background: url("../img/btn-submit.png") no-repeat 0 0;
+    background: url("https://www.armprof.ru/design/default/img/btn-submit.png") no-repeat 0 0;
     border: none;
     width: 170px;
     height: 33px;
@@ -1362,7 +1616,7 @@ div.chooseBar>div>div {
 
 .contact-popup2-close {
     display: block;
-    background: url("../../../img/icon-close.png") no-repeat 0 0;
+    background: url("../../https://www.armprof.ru/design/default/img/icon-close.png") no-repeat 0 0;
     width: 14px;
     height: 13px;
     position: absolute;
@@ -1406,7 +1660,7 @@ input[type="text"].contact-popup2-name {
 
 .del {
     display: block;
-    background: url("../img/icon-del.png") no-repeat 0 0;
+    background: url("https://www.armprof.ru/design/default/img/icon-del.png") no-repeat 0 0;
     width: 17px;
     height: 18px;
     float: right;
@@ -1430,7 +1684,7 @@ input[type="text"].contact-popup2-company {
 }
 
 textarea.contact-popup2-text {
-    background: url("../img/bg-contect-popup-textarea.png") repeat-y 0 0;
+    background: url("https://www.armprof.ru/design/default/img/bg-contect-popup-textarea.png") repeat-y 0 0;
     border: none;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1446,7 +1700,7 @@ textarea.contact-popup2-text {
 }
 
 .contact-popup2-submit {
-    background: url("../img/btn-submit.png") no-repeat 0 0;
+    background: url("https://www.armprof.ru/design/default/img/btn-submit.png") no-repeat 0 0;
     border: none;
     width: 170px;
     height: 33px;
@@ -1501,7 +1755,7 @@ textarea.contact-popup2-text {
 
 .captcha td.img {
     font-weight: bold;
-    background: url("../img/bg0008.jpg");
+    background: url("https://www.armprof.ru/design/default/img/bg0008.jpg");
     letter-spacing: 10px;
     vertical-align: middle;
     font-size: 26px;
@@ -1567,7 +1821,7 @@ textarea.contact-popup2-text {
     font-size: 13px;
     color: #333333;
     padding: 0 5px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -1576,7 +1830,7 @@ textarea.contact-popup2-text {
     font-size: 13px;
     color: #333333;
     padding: 0 5px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #main_cat_slider .main-cat-txt a:hover {
@@ -1586,7 +1840,7 @@ textarea.contact-popup2-text {
 #main_cat_slider .prev {
     display: inline-block;
     position: absolute;
-    background: url('../img/icons.png') 0 -519px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -519px no-repeat;
     width: 39px;
     height: 39px;
     left: -35px;
@@ -1600,7 +1854,7 @@ textarea.contact-popup2-text {
 #main_cat_slider .next {
     display: inline-block;
     position: absolute;
-    background: url('../img/icons.png') 0 -248px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -248px no-repeat;
     width: 39px;
     height: 38px;
     right: -35px;
@@ -1628,43 +1882,71 @@ textarea.contact-popup2-text {
 
 .main-content {
     margin-bottom: 30px;
-    margin-top: -20px;
+}
+
+.main-content-text {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.main-content li a {
+    text-decoration: underline;
+}
+
+.main-content li a:hover {
+    text-decoration: none;
 }
 
 .main-content .main-content-left {
-    width: 190px;
+    width: 210px;
+    margin-right: 50px;
+    flex-shrink: 0;
 }
 
 .main-content .main-content-right {
     width: 210px;
+    order: 2;
+    flex-shrink: 0;
 }
 
 .main-content .main-content-middle {
-    margin: 0 270px 0 210px;
+    margin-right: 50px;
 }
 
-#news-slider .news-slider-top {
-    margin-bottom: 25px;
+/*#news-slider .news-slider-top {
     position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    margin-bottom: 35px;
 }
 
 #news-slider .news-slider-top p {
-    margin-right: 98px;
+    flex-basis: 50%;
+    margin-top: 0px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     color: #333333;
-    margin-top: 0px;
 }
 
 #news-slider .news-slider-top .prev {
+    margin-left: auto;
+    margin-right: 8px;
     display: inline-block;
-    position: absolute;
-    background: url('../img/icons.png') 0 -673px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -673px no-repeat;
     width: 25px;
     height: 25px;
-    right: 55px;
-    top: 0;
+    cursor: pointer;
 }
 
 #news-slider .news-slider-top .prev:hover {
@@ -1673,16 +1955,15 @@ textarea.contact-popup2-text {
 
 #news-slider .news-slider-top .prev.disabled {
     background-position: 0 -708px;
+    cursor: default;
 }
 
 #news-slider .news-slider-top .next {
     display: inline-block;
-    position: absolute;
-    background: url('../img/icons.png') 0 -568px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -568px no-repeat;
     width: 25px;
     height: 25px;
-    right: 20px;
-    top: 0;
+    cursor: pointer;
 }
 
 #news-slider .news-slider-top .next:hover {
@@ -1691,6 +1972,7 @@ textarea.contact-popup2-text {
 
 #news-slider .news-slider-top .next.disabled {
     background-position: 0 -603px;
+    cursor: default;
 }
 
 #news-slider .news-slider-wrp {
@@ -1706,39 +1988,63 @@ textarea.contact-popup2-text {
     display: inline-block;
     vertical-align: top;
 }
+*/
+
+.last-news {
+    margin-top: 12px;
+    color: #333333;
+}
+
+.news-title {
+    width: 120px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+}
+
+.news-wrp {
+    margin-bottom: 24px;
+}
 
 .news-date {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .news-day {
     display: block;
     font-size: 60px;
     text-transform: uppercase;
-    color: #24b9e0;
-    font-weight: 200;
-    margin-bottom: 10px;
-    line-height: 45px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 1;
 }
 
 .news-mounth {
-    font-weight: 700;
-    display: inline-block;
+    margin-left: 5px;
+    display: block;
     font-size: 11px;
+    font-weight: 600;
+    letter-spacing: -0.28px;
     text-transform: uppercase;
-    color: #24b9e0;
-    line-height: 1em;
+    line-height: 1;
 }
 
 .news-head,
 .news-head a {
-    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.45px;
+    color: #333333;
     white-space: normal;
-    font-weight: 700;
-    line-height: 16px;
-    margin-bottom: 30px;
-    color: #333333 !important;
-    font-size: 14px;
+    text-decoration: underline;
+}
+
+.news-wrp .news-head {
+    margin-bottom: 20px;
 }
 
 .news-head:hover,
@@ -1747,10 +2053,11 @@ textarea.contact-popup2-text {
 }
 
 .news-text {
-    white-space: normal;
     font-size: 12px;
     color: #747a81;
-    line-height: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    white-space: normal;
 }
 
 .advertisment-link {
@@ -1840,7 +2147,12 @@ textarea.contact-popup2-text {
     opacity: 0.25;
 }
 
-.main-content-middle h1,
+.main-content-middle h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
 .main-content-middle h2,
 .main-content-middle h3,
 .main-content-middle h4,
@@ -1851,7 +2163,7 @@ textarea.contact-popup2-text {
     color: #333333;
     line-height: 32px;
     margin-bottom: 30px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .main-content-middle h1 b,
@@ -1860,19 +2172,22 @@ textarea.contact-popup2-text {
 .main-content-middle h4 b,
 .main-content-middle h5 b,
 .main-content-middle h6 b {
-    font-weight: 700;
+    font-weight: 600;
 }
 
-.content .main-content-middle p {
-    line-height: 18px;
+.main-content-middle p {
     margin: 20px 0;
-    color: #747a81;
     font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #747a81;
     text-align: justify;
 }
 
 .main-content-middle .bold {
-    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 600;
     color: #333333;
 }
 
@@ -1884,11 +2199,6 @@ textarea.contact-popup2-text {
 .main-content-middle .h-wrp h6 {
     display: inline;
     margin-bottom: 0;
-}
-
-.main-content-middle .h-wrp span {
-    font-size: 24px;
-    color: #333333;
 }
 
 
@@ -1946,7 +2256,7 @@ textarea.contact-popup2-text {
     align-items: center;
     margin-bottom: 70px;
     padding: 46px 0 0;
-    /*background: transparent url(../img/maket-img/call-us-bg.jpg) 50% 0% no-repeat; */
+    /*background: transparent url(https://www.armprof.ru/design/default/img/maket-img/call-us-bg.jpg) 50% 0% no-repeat; */
 }
 
 .call-block p {
@@ -2018,7 +2328,7 @@ textarea.contact-popup2-text {
 .checkout-btn b,
 .qwestion-btn b,
 .go-back-btn b {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /*.recall-btn:before,
@@ -2031,7 +2341,7 @@ textarea.contact-popup2-text {
     content: "";
     display: inline-block;
     position: absolute;
-    background: url('../img/icons.png') 0 -918px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -918px no-repeat;
     width: 4px;
     height: 9px;
     right: 15px;
@@ -2056,19 +2366,19 @@ h3,
 h4,
 h5,
 h6 {
+    line-height: 1.3;
+    margin-bottom: 17px;
     color: #333333;
     font-weight: 600;
 }
 
 h1 {
-    margin-bottom: 17px;
     font-size: 40px;
     letter-spacing: -2px;
     line-height: 1.2;
 }
 
 h2 {
-    margin-bottom: 17px;
     font-size: 26px;
     color: #333333;
     font-weight: 700;
@@ -2120,8 +2430,9 @@ h6 {
 }
 
 .h-wrp span {
-    font-weight: 200;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
     color: #333333;
 }
 
@@ -2132,6 +2443,7 @@ h6 {
 
 .breadcrums {
     margin: 0;
+    margin-bottom: 15px;
     font-weight: 700;
     color: #333333;
     width: 800px;
@@ -2193,7 +2505,7 @@ h6 {
 .cat-item .cat-item-name {
     padding: 0 21px;
     margin: 5px 0 20px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     text-decoration: none;
     color: #333333;
@@ -2203,7 +2515,7 @@ h6 {
 
 .cat-item .cat-item-name a {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     color: #333333;
     line-height: 1em;
@@ -2211,6 +2523,20 @@ h6 {
 
 .cat-item .cat-item-name:hover a {
     color: red;
+}
+
+.category-wrp {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .cat-item .cat-item-txt,
@@ -2271,7 +2597,7 @@ h6 {
 
 .promo-block .promo-head b {
     font: inherit;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* .promo-right { margin-left: 523px; } */
@@ -2307,7 +2633,7 @@ h6 {
 
 .promo-right .promo-right-second p b {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .promo-right .promo-right-second .promo-art {
@@ -2622,7 +2948,7 @@ h6 {
 }
 
 .filter-block .filter-head {
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
 }
 
@@ -2645,7 +2971,7 @@ h6 {
 }
 
 .filter-block .jq-checkbox.checked .jq-checkbox__div {
-    background: url('../img/icons.png') 0 -824px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -824px no-repeat;
     width: 10px;
     height: 8px;
     -webkit-box-shadow: none;
@@ -2663,7 +2989,7 @@ h6 {
     line-height: 1em;
     margin-bottom: 20px;
     color: #747a81;
-    font-weight: 700;
+    font-weight: 600;
     margin-right: 10px;
     position: relative;
     display: inline-block;
@@ -2684,7 +3010,7 @@ h6 {
     content: "";
     display: inline-block;
     position: absolute;
-    background: url('../img/icons.png') 0 -824px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -824px no-repeat;
     width: 10px;
     height: 8px;
     left: 0;
@@ -2728,7 +3054,7 @@ h6 {
 }
 
 .ui-multiselect span.ui-icon {
-    background: url('../img/icons.png') 0 -975px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -975px no-repeat;
     width: 10px;
     height: 5px;
     margin-top: 13px;
@@ -2830,7 +3156,7 @@ h6 {
 .ui-multiselect-checkboxes label input:checked+span:after {
     content: "";
     display: inline-block;
-    background: url('../img/icons.png') 0 -824px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -824px no-repeat;
     width: 10px;
     height: 8px;
     position: absolute;
@@ -2912,7 +3238,7 @@ h6 {
 .jq-selectbox__trigger-arrow {
     border: none;
     top: 13px;
-    background: url('../img/icons.png') 0 -975px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -975px no-repeat;
     width: 10px;
     height: 5px;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -2992,11 +3318,11 @@ h6 {
 .clear-filter {
     background-color: #edeef2;
     color: #333333;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .clear-filter:before {
-    background: url('../img/icons.png') 0 -842px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -842px no-repeat;
     width: 8px;
     height: 9px;
 }
@@ -3011,7 +3337,7 @@ h6 {
 }
 
 .category-line {
-    margin-bottom: 30px;
+    margin-bottom: 75px;
 }
 
 .category-line .category-item {
@@ -3019,8 +3345,8 @@ h6 {
 }
 
 .category-line .category_products_wrap {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-bottom: 0;
+    box-sizing: border-box;
 }
 
 .category-products-controls {
@@ -3032,8 +3358,6 @@ h6 {
     -ms-align-items: center;
     align-items: center;
     margin-bottom: 45px;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 .category-products-controls .filter-select-wrp {
@@ -3067,7 +3391,7 @@ h6 {
 
 .category-found {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
     letter-spacing: -0.3px;
     color: #333;
@@ -3075,11 +3399,14 @@ h6 {
 
 .category-found span {
     white-space: nowrap;
+    font-weight: 700;
 }
 
 .category-products {
     padding-top: 25px;
     padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -3089,8 +3416,11 @@ h6 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    width: 1270px;
     justify-content: center;
     margin-bottom: 50px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .category-products-inner {
@@ -3112,7 +3442,7 @@ h6 {
 }
 
 .category-products--grid .btn--grid {
-    background-image: url(../img/new_img/grid-view-hover.png);
+    background-image: url('../img/new_img/grid-view-hover.png');
 }
 
 .category-products--grid .category-item:nth-child(n+11):nth-child(-n+15) {
@@ -3173,6 +3503,7 @@ h6 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    flex-grow: 1;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
@@ -3186,7 +3517,7 @@ h6 {
     margin-bottom: 5px;
     min-height: 78px;
     font-size: 13px;
-    font-weight: 800;
+    font-weight: 700;
     color: #333333;
     line-height: 15px;
 }
@@ -3221,6 +3552,7 @@ h6 {
     margin-bottom: auto;
     font-size: 12px;
     font-weight: 600;
+    letter-spacing: -0.6px;
     line-height: 14px;
 }
 
@@ -3241,6 +3573,7 @@ h6 {
     letter-spacing: -0.6px;
     margin-right: 10px;
     margin-bottom: 15px;
+    margin-top: auto;
 }
 
 .ct-pr {
@@ -3250,6 +3583,10 @@ h6 {
     color: red;
     letter-spacing: -0.8px;
     white-space: nowrap;
+}
+
+.mProductsTypeDiv .ct-pr {
+    white-space: normal;
 }
 
 .ct-pr .rubl {
@@ -3280,11 +3617,12 @@ h6 {
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: auto;
 }
 
 .category-item-btns .btn--favorite {
     flex-grow: 1;
-/*    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/icon_favorite.png");
+/*    background-image: url("../img/new_img/icon_favorite.png");
 */    background-size: 18px 23px;
     background-position: center bottom 7px;
     border-right: 1px solid #ecedf1;
@@ -3292,7 +3630,7 @@ h6 {
 
 .category-item-btns .btn--compare {
     flex-grow: 1;
-/*    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/icon_compare.png");
+/*    background-image: url("../img/new_img/icon_compare.png");
 */    background-size: 22px 20px;
     background-position: left 12px bottom 7px;
 }
@@ -3346,7 +3684,8 @@ h6 {
 }
 
 .rubl {
-    font-family: als_rublregular;
+    font-family: HelveticaNeueMedium-rubl;
+    font-weight: 500;
 }
 
 .paginator {
@@ -3413,7 +3752,7 @@ h6 {
 }
 
 .cite-block-title b {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .cite-block .cite-block-left {
@@ -3469,15 +3808,11 @@ h6 {
     max-width: 100%;
 }
 
-.produkt-wrp {
-    margin-top: 20px;
-}
-
 .produkt-wrp-top {
     display: grid;
-    grid-template-columns: 155px auto 1fr;
+    grid-template-columns: 105px auto 1fr;
     grid-template-rows: auto 1fr auto auto auto;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .produkt-wrp-top img {
@@ -3490,16 +3825,20 @@ h6 {
 
 .produkt-slider-nav-wrp {
     width: 74px;
+    height: 462px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
 .produkt-slider-nav {
-    padding-top: 15px;
+/*    padding-top: 5px;
     padding-bottom: 15px;
-}
+*/}
 
 .produkt-slider-nav .slide.slick-slide {
     width: 72px;
@@ -3560,6 +3899,7 @@ h6 {
 
 
 .produkt-slider-nav-more {
+    margin-top: 10px;
     font-size: 12px;
     font-weight: 600;
     line-height: 2;
@@ -3586,6 +3926,8 @@ h6 {
     justify-content: center;
     -ms-align-items: center;
     align-items: center;
+    margin-top: 26px;
+    margin-right: 45px;
 }
 
 .produkt-slider-for .slide.slick-slide {
@@ -3609,24 +3951,6 @@ h6 {
     -ms-align-items: center;
     align-items: center;
 }
-
-/*.produkt-wrp .produkt-left {
-    width: 280px;
-    text-align: center;
-    display: block;
-}
-
-.produkt-wrp .produkt-left img {
-    max-width: 100%;
-    display: inline-block;
-}
-
-.produkt-wrp .produkt-right {
-    margin-left: 0;
-    display: block;
-    width: 400px;
-    float: right;
-}*/
 
 .produkt-spec-head {
     margin-bottom: 15px;
@@ -3655,13 +3979,13 @@ h6 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    margin-top: 16px;
-    margin-bottom: 22px;
+    margin-top: 32px;
+    margin-bottom: 28px;
 }
 
 .produkt-garanty p {
-    margin-right: 35px;
-    padding: 10px 16px;
+    margin-right: 28px;
+    padding: 10px 20px;
     color: #333333;
     font-size: 14px;
     font-weight: 300;
@@ -3687,7 +4011,7 @@ h6 {
     display: block;
     position: absolute;
     content: "";
-    background: url("../img/new_img/icon_flag.png");
+    background: url("https://www.armprof.ru/design/default/img/new_img/icon_flag.png");
     width: 25px;
     height: 100%;
     right: -25px;
@@ -3710,16 +4034,26 @@ h6 {
 }
 
 .produkt-btns {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    justify-self: start;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+}
+
+.produkt-controls {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    -ms-align-self: start;
+    align-self: start;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
 }
 
 .produkt-btns a:last-child {
@@ -3748,9 +4082,14 @@ h6 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -ms-align-items: flex-end;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+ /*   -ms-align-items: flex-end;
     align-items: flex-end;
-}
+*/}
 
 .produkt-spec-line {
     display: -webkit-flex;
@@ -3792,7 +4131,7 @@ h6 {
 }
 
 .produkt-wrp .ot {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
     color: red;
     float: right;
@@ -3807,21 +4146,32 @@ h6 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    margin-right: 25px;
+    -ms-align-items: baseline;
+    align-items: baseline;
+    margin-right: 55px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 1.2;
     letter-spacing: -0.7px;
     color: #ff0000;
 }
+ 
+.produkt-price-title {
+    margin-right: 10px;
+}
+
 
 .produkt-price .sum {
     font-size: 25px;
     font-weight: 600;
+    letter-spacing: -1.25px;
+    color: red;
+}
+
+.produkt-price .rubl {
+    margin-left: 0.3em;
+    font-size: 25px;
+    font-weight: 500;
     letter-spacing: -1.25px;
     color: red;
 }
@@ -3838,7 +4188,7 @@ h6 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 
@@ -3854,7 +4204,7 @@ h6 {
 }
 
 .request-quote b {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .request-quote:hover {
@@ -3863,7 +4213,7 @@ h6 {
 }
 
 .request-quote:before {
-    background: url('../img/icons.png') 0 -899px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -899px no-repeat;
     width: 4px;
     height: 9px;
 }
@@ -3901,29 +4251,41 @@ h6 {
 }
 
 .tabs .tabs-top {
-    height: 46px;
-    border-bottom: 1px solid #ecedf1;
-    margin-bottom: 25px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .tab-triger {
-    display: inline-block;
-    padding: 0 25px;
-    text-align: center;
-    line-height: 45px;
-    height: 45px;
-    cursor: pointer;
-    font-size: 11px;
-    text-transform: uppercase;
-    color: #333;
-    font-weight: 700;
-    letter-spacing: -0.28px;
-    text-transform: uppercase;
-    background-color: white;
-    float: left;
     margin-top: 1px;
     margin-left: 1px;
-    border-bottom: 1px solid #ecedf1;
+    padding: 0 34px;
+    height: 51px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.28px;
+    color: #333;
+    background-color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    /*!!!*/
+    background-color: transparent;
 }
 
 .tab-triger:hover {
@@ -3933,8 +4295,14 @@ h6 {
 .tab-triger.active {
     margin-left: 0;
     border: 1px solid #ecedf1;
-    border-bottom: 1px solid white;
+    border-bottom-color: white;
     color: #ff0000;
+}
+
+.tabs-content {
+    padding-top: 25px;
+    border-top: 1px solid #ecedf1;
+    margin-top: -1px;
 }
 
 .tab-content-item {
@@ -4028,7 +4396,7 @@ p.mih-head b {
 }
 
 /*.qwestion-btn:before {
-    background: url('../img/icons.png') 0 -880px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -880px no-repeat;
     width: 4px;
     height: 9px;
 }*/
@@ -4056,9 +4424,10 @@ p.mih-head b {
     border: solid 1px #ecedf1;
     background-color: white;
     font-size: 10px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
     text-transform: uppercase;
     color: #333333;
-    font-weight: 900;
     padding: 0 15px;
 }
 
@@ -4144,7 +4513,7 @@ p.mih-head b {
 #producer_slider .producer-slider-list>li .producer-type {
     font-size: 14px;
     color: #333333;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 25px;
     height: 70px;
 }
@@ -4180,6 +4549,7 @@ p.mih-head b {
     border-left: 1px solid #ecedf1;
     margin-left: 30px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .sertificat-img-wrp {
@@ -4242,6 +4612,7 @@ p.mih-head b {
 
 .map-block {
     margin-bottom: 30px;
+    margin-top: 20px;
     height: 800px;
     position: relative;
 }
@@ -4277,12 +4648,17 @@ p.mih-head b {
 }
 
 .map-block .kontakt-column {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     width: 190px;
-    position: relative;
     padding-left: 60px;
     padding-right: 60px;
+}
+
+.kontakt-column p {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .map-block p {
@@ -4297,7 +4673,7 @@ p.mih-head b {
 
 .map-block .kontakt-column-head b {
     font: inherit;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .map-block .time {
@@ -4319,7 +4695,7 @@ p.mih-head b {
     position: absolute;
     left: 0;
     top: 0;
-    background: url('../img/icons.png') 0 -190px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -190px no-repeat;
     width: 48px;
     height: 48px;
 }
@@ -4339,6 +4715,10 @@ p.mih-head b {
 
 .about-block .go-back-btn {
     margin-top: 30px;
+}
+
+.about-block p {
+    margin: 10px 0;
 }
 
 footer {
@@ -4385,7 +4765,7 @@ footer .fut-contact .fut-contact-head {
 
 footer .fut-contact address {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     color: #747a81;
     line-height: 1em;
     margin-bottom: 8px;
@@ -4441,7 +4821,7 @@ footer .fut-contact .fut-phone {
     position: absolute;
     left: 45%;
     top: 35%;
-    background: url('../img/icons.png') 0 -407px no-repeat;
+    background: url('https://www.armprof.ru/design/default/img/icons.png') 0 -407px no-repeat;
 }
 
 button.for-play:hover {
@@ -4478,7 +4858,7 @@ button.for-play {
     left: calc(50% - 27px);
     top: calc(50% - 27px);
     position: absolute;
-    background: url(../img/icons.png) 0 -407px no-repeat;
+    background: url(https://www.armprof.ru/design/default/img/icons.png) 0 -407px no-repeat;
 }
 
 img.video-img {
@@ -4502,7 +4882,7 @@ button.for-play {
     left: calc(50% - 27px);
     top: calc(50% - 27px);
     position: absolute;
-    background: url(../img/icons.png) 0 -407px no-repeat;
+    background: url(https://www.armprof.ru/design/default/img/icons.png) 0 -407px no-repeat;
 }
 
 img.video-img {
@@ -4598,7 +4978,7 @@ img.video-img {
     display: block;
     position: absolute;
     content: "";
-    background: url("../img/new_img/arrow-down.png") 50% 50% no-repeat;
+    background: url("https://www.armprof.ru/design/default/img/new_img/arrow-down.png") 50% 50% no-repeat;
     width: 7px;
     height: 4px;
     right: 0;
@@ -4606,7 +4986,7 @@ img.video-img {
 }
 
 .header-menu-main > li:hover>span:after {
-    background: url("../img/new_img/arrow-down-h.png") 50% 50% no-repeat;
+    background: url("https://www.armprof.ru/design/default/img/new_img/arrow-down-h.png") 50% 50% no-repeat;
 }
 
 
@@ -4732,7 +5112,7 @@ header {
 .header-phones-block .text {
     color: #747a81;
     font-size: 12px;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
     letter-spacing: -0.3px;
 }
 
@@ -4774,28 +5154,28 @@ header {
     letter-spacing: -0.3px;
 }
 
-.header-phones-block .link:hover,
-.header-phones-block .link:hover {
-    border-bottom: none;
-    padding-bottom: 1px;
+.header-phones-block .link:hover span,
+.header-phones-block .link:hover span {
+    border-bottom-color: transparent;
 }
 
-.header-phones-block .link:before,
-.header-phones-block .link:before  {
+.header-phones-block .link::before {
     display: block;
     content: "";
-    background: url("../img/new_img/ICON_tel.png");
-    width: 23px;
+    width: 25px;
     height: 25px;
     margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.header-phones-block .link:before {
-    background: url("../img/new_img/ICON_mail.png");
-    width: 25px;
-    height: 20px;
+#ContactCall::before {
+    background-image: url("https://www.armprof.ru/design/default/img/new_img/ICON_tel.png");
 }
 
+#ContactMail::before {
+    background-image: url("https://www.armprof.ru/design/default/img/new_img/ICON_mail.png");
+}
 
 .header-cart-block {
     grid-row-start: 2;
@@ -4835,9 +5215,13 @@ header {
     margin-bottom: 16px;
 }
 
-.action-btn {
-    display: block;
+.action-btn-list .action-btn {
     height: 100%;
+}
+
+.action-btn {
+    position: relative;
+    display: block;
     font-size: 0;
     border-right: 1px solid #edeef2;
     background-position: 50% 50%;
@@ -4858,47 +5242,84 @@ li:last-child .action-btn {
 
 .btn--favorite {
     /*!!!*/
-/*    background-image: url("..img/new_img/icon_favorite.png");
+/*    background-image: url("https://www.armprof.ru/design/default/img/new_img/icon_favorite.png");
 */
     width: 26px;
     padding: 0 20px;
-    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/icon-favorite.png");
+    background-image: url("../img/new_img/icon-favorite.png");
     background-repeat: no-repeat;
 }
 
 .btn--favorite:hover {
-    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/icon-favorite-red.png");
+    background-image: url("../img/new_img/icon-favorite-red.png");
 }
 
 .btn--cart {
     width: 38px;
     padding: 0 17px;
-/*    background-image: url("..img/new_img/icon_cart.png");
+/*    background-image: url("https://www.armprof.ru/design/default/img/new_img/icon_cart.png");
 */
-    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/icon-cart.png");
+    background-image: url("../img/new_img/icon-cart.png");
     background-repeat: no-repeat;
 }
 
 .btn--cart:hover {
-    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/icon-cart-red.png");
+    background-image: url("../img/new_img/icon-cart-red.png");
 }
 
 .btn--compare {
     width: 36px;
     padding: 0 17px;
-/*    background-image: url("..img/new_img/icon_compare.png");
+/*    background-image: url("https://www.armprof.ru/design/default/img/new_img/icon_compare.png");
 */
-    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/icon-compare.png");
+    background-image: url("../img/new_img/icon-compare.png");
     background-repeat: no-repeat;
 }
 
 .btn--compare:hover {
-    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/icon-compare-red.png");
+    background-image: url("../img/new_img/icon-compare-red.png");
 }
 
-.action-btn span {
-    font-size: 0;
+
+.action-amount {
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #f00;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
 }
+
+.btn--favorite .action-amount {
+    right: 6px;
+    top: 6px;
+}
+
+.btn--cart .action-amount {
+    right: 6px;
+    top: 6px;
+}
+
+.btn--compare .action-amount {
+    top: 5px;
+    right: -12px;
+}
+
 
 .search-example {
     display: block;
@@ -4938,13 +5359,13 @@ li:last-child .action-btn {
 }
 
 .link_reviews:before {
-    background: url(../img/new_img/reviews.png);
+    background: url(https://www.armprof.ru/design/default/img/new_img/reviews.png);
     width: 22px;
     height: 21px;
 }
 
 .link_sale:before {
-    background: url(../img/new_img/sale.png);
+    background: url(https://www.armprof.ru/design/default/img/new_img/sale.png);
     width: 21px;
     height: 22px;
 }
@@ -5006,9 +5427,9 @@ li:last-child .action-btn {
     font-weight: 700;
     text-transform: uppercase;
     /*!!!*/
-/*    background-image: url("../img/new_img/ICON_menu.png");
+/*    background-image: url("https://www.armprof.ru/design/default/img/new_img/ICON_menu.png");
 */
-    background-image: url("file:///home/helloworld/Work/armprof/img/new_img/ICON_menu.png");
+    background-image: url("../img/new_img/ICON_menu.png");
     background-position: 0 50%;
     background-repeat: no-repeat;
     background-size: 28px 22px;
@@ -5048,7 +5469,7 @@ li:last-child .action-btn {
     display: block;
     position: absolute;
     content: "";
-    background: url("../img/new_img/arrow-down-w.png");
+    background: url("https://www.armprof.ru/design/default/img/new_img/arrow-down-w.png");
     width: 10px;
     height: 7px;
     right: 25px;
@@ -5061,7 +5482,7 @@ li:last-child .action-btn {
 }
 
 .right_red_menu:last-child::after {
-    right: 0;
+    right: 10px;
 }
 
 .right_red_menu>img {
@@ -5098,11 +5519,12 @@ li:last-child .action-btn {
 .drop_block ul li {
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 700;
+    letter-spacing: -0.6px;
     color: #333333;
     position: relative;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .drop_block ul li:last-child {
@@ -5144,16 +5566,36 @@ li:last-child .action-btn {
 
 .menu-open-block {
     display: none;
-    width: 100%;
-    height: 350px;
-    background: #ff0000;
     position: absolute;
-    z-index: 149;
+    width: 100%;
+    height: 340px;
     padding-top: 30px;
+    background: #ff0000;
+    z-index: 149;
+    box-sizing: border-box;
 }
 
 .menu-open-block.active {
     display: block;
+}
+
+.menu-open-block-inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 .block1050 {
@@ -5162,66 +5604,64 @@ li:last-child .action-btn {
     margin: 0 auto;
 }
 
-.red_menu_block {
+.link-block {
     width: 260px;
-    float: left;
-    display: table;
-    margin-right: 10px;
-}
-
-.red_menu_block .link-block {
     padding-left: 25px;
     padding-right: 25px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
-    display: table;
 }
 
-.red_menu_block .link-block:hover {
+.link-block:hover {
     /*padding: 25px;
-	padding-top: 20px;
-	background: white;*/
+    padding-top: 20px;
+    background: white;*/
 }
 
-.red_menu_block .link-block a {
-    font-size: 14px;
-    color: white;
+.link-block a {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
     min-height: 30px;
     padding-top: 0px;
-    padding-left: 55px;
-    display: table-cell;
-    font-weight: 700;
-    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
     text-decoration: none;
-    width: 100%;
     box-sizing: border-box;
-    height: 55px;
-    vertical-align: middle;
 }
 
-.red_menu_block .link-block:hover a {
+.link-block:hover a {
     color: white;
     text-decoration: underline;
 }
 
-.red_menu_block .link-block a .for_img {
-    position: absolute;
-    height: 40px;
+.link-block .for_img {
     width: 40px;
-    left: 0;
-    top: 0;
-    line-height: 75px;
-    text-align: center;
+    margin-right: 20px;
 }
+
+.link-block .for_img svg {
+    max-height: 40px;
+    max-width: 40px;
+}
+
 
 .red_menu_block.block210 {
     width: 210px;
     padding: 20px 21px;
     box-sizing: border-box;
-    background: url(../img/new_img/IMG_podbor.png) no-repeat 50% 0;
+    background: url(https://www.armprof.ru/design/default/img/new_img/IMG_podbor.png) no-repeat 50% 0;
     min-height: 200px;
 }
 
@@ -5254,62 +5694,58 @@ li:last-child .action-btn {
     font-size: 10px;
     color: white;
     background: red;
-    font-weight: 700;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .stock_block .stock_name {
     color: #333333;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 30px;
+    line-height: 1.2;
 }
 
 .stock_block .stock_desc {
     color: #333333;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px;
-}
-
-.stock_block .stock_price {
-    color: #ff0000;
-    font-size: 30px;
-    font-weight: 700;
 }
 
 .stock_block .stock_old_price {
     color: #a7aeb8;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: line-through;
 }
 
 /*.customers_slider .slide a .logo-h {
-	display: none;
+    display: none;
 }
 .customers_slider .slide a:hover .logo {
-	display: none;
+    display: none;
 }
 .customers_slider .slide a:hover .logo-h {
-	display: block;
+    display: block;
 }*/
-.customers_slider .slide {
+/*.customers_slider .slide {
     outline: none;
-}
+}*/
 
-.customers_slider .slide .logo {
+.customers_slider .slide .customer-logo {
     -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
+    //Safari 6.0 - 9.0 
     filter: grayscale(100%);
+
 }
 
-.customers_slider .slide .logo:hover {
+.customers_slider .slide .customer-logo:hover {
     -webkit-filter: none;
-    /* Safari 6.0 - 9.0 */
+    // Safari 6.0 - 9.0 
     filter: none;
     cursor: pointer;
 }
-
+/*
 .customers_slider .slide a,
 .customers_slider .slide div {
     display: table-cell;
@@ -5321,34 +5757,90 @@ li:last-child .action-btn {
 .customers_slider .slide a img,
 .customers_slider .slide div img {
     margin: 0 auto;
-}
+}*/
 
 .customers {
     position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 1310px;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: solid 1px #edeef2;
+    box-sizing: border-box;
 }
 
 .customers .customers_ttl {
-    font-weight: 800;
-    font-size: 16px;
-    color: #333333;
-    margin-bottom: 50px;
-    margin-top: 100px;
-    text-transform: uppercase;
+  width: 305px;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.4px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.customers-slider-wrp {
+    width: 810px;
+    margin-left: -28px;
+    margin-right: -28px;
 }
 
 .customers_slider {
-    margin-bottom: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.customers_slider .slide {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.customers_slider .slick-list {
+    margin-left: -28px;
+    margin-right: -28px;
+}
+
+.customers_slider .slick-track {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.customers_slider .slide div {
+    line-height: 0;
 }
 
 .customers_slider .slick-prev,
 .customers_slider .slick-next {
-    top: -59px;
+    top: -39px;
 }
 
 .customers_slider .slick-prev,
 .slider-nav .slick-prev {
     left: 600px;
-    background: url("../img/new_img/arrow-prev.png");
+    background: url("https://www.armprof.ru/design/default/img/new_img/arrow-prev.png");
     height: 25px;
     width: 25px;
 }
@@ -5356,7 +5848,7 @@ li:last-child .action-btn {
 .customers_slider .slick-next,
 .slider-nav .slick-next {
     left: 660px;
-    background: url("../img/new_img/arrow-next.png");
+    background: url("https://www.armprof.ru/design/default/img/new_img/arrow-next.png");
     height: 25px;
     width: 25px;
 }
@@ -5379,14 +5871,14 @@ li:last-child .action-btn {
 .customers_slider .slick-prev:focus,
 .slider-nav .slick-prev:hover,
 .slider-nav .slick-prev:focus {
-    background: url("../img/new_img/arrow-prev.png");
+    background: url("https://www.armprof.ru/design/default/img/new_img/arrow-prev.png");
 }
 
 .customers_slider .slick-next:hover,
 .customers_slider .slick-next:focus,
 .slider-nav .slick-next:hover,
 .slider-nav .slick-next:focus {
-    background: url("../img/new_img/arrow-next.png");
+    background: url("https://www.armprof.ru/design/default/img/new_img/arrow-next.png");
 }
 
 .customers_slider .slick-prev:before,
@@ -5495,121 +5987,6 @@ li:last-child .action-btn {
     fill: red;
 }
 
-/* 
-.zadvijki {
-background-image: url(../img/new_img/SVG/white/icon-01.svg);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-
-}
-.zadvijki_black {
-	background-image: url(../img/new_img/SVG/black/icon-01.svg);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-}
-.red_menu_block .link-block:hover .zadvijki, .left-menu > ul > li.active .zadvijki_black, .left-menu > ul > li > a:hover .zadvijki_black{
-	background: url(../img/new_img/ICON_zadvijki_h.png) 50% 50% no-repeat;
-}
-
-.zatvoty {
-	background: url(../img/new_img/icon_zatvoty.png) 50% 50% no-repeat;
-}
-.zatvoty_black {
-	background: url(../img/new_img/icon_zatvoty_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .zatvoty, .left-menu > ul > li.active .zatvoty_black, .left-menu > ul > li > a:hover .zatvoty_black{
-	background: url(../img/new_img/icon_zatvoty_h.png) 50% 50% no-repeat;
-}
-.mufty {
-	background: url(../img/new_img/ICON_mufty.png) 50% 50% no-repeat;
-}
-.mufty_black {
-	background: url(../img/new_img/ICON_mufty_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .mufty, .left-menu > ul > li.active .mufty_black, .left-menu > ul > li > a:hover .mufty_black{
-	background: url(../img/new_img/ICON_mufty_h.png) 50% 50% no-repeat;
-}
-.homuty {
-	background: url(../img/new_img/ICON_homuty.png) 50% 50% no-repeat;
-}
-.homuty_black {
-	background: url(../img/new_img/ICON_homuty_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .homuty, .left-menu > ul > li.active .homuty_black, .left-menu > ul > li > a:hover .homuty_black{
-	background: url(../img/new_img/ICON_homuty_h.png) 50% 50% no-repeat;
-}
-.klapany {
-	background: url(../img/new_img/ICON_klapany.png) 50% 50% no-repeat;
-}
-.klapany_black {
-	background: url(../img/new_img/ICON_klapany_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .klapany, .left-menu > ul > li.active .klapany_black, .left-menu > ul > li > a:hover .klapany_black{
-	background: url(../img/new_img/ICON_klapany_h.png) 50% 50% no-repeat;
-}
-.douplotnitely {
-	background: url(../img/new_img/ICON_douplotnitely.png) 50% 50% no-repeat;
-}
-.douplotnitely_black {
-	background: url(../img/new_img/ICON_douplotnitely_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .douplotnitely, .left-menu > ul > li.active .douplotnitely_black, .left-menu > ul > li > a:hover .douplotnitely_black{
-	background: url(../img/new_img/ICON_douplotnitely_h.png) 50% 50% no-repeat;
-}
-.krany {
-	background: url(../img/new_img/ICON_krany.png) 50% 50% no-repeat;
-}
-.krany_black {
-	background: url(../img/new_img/ICON_krany_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .krany, .left-menu > ul > li.active .krany_black, .left-menu > ul > li > a:hover .krany_black{
-	background: url(../img/new_img/ICON_krany_h.png) 50% 50% no-repeat;
-}
-.detaly {
-	background: url(../img/new_img/ICON_detaly.png) 50% 50% no-repeat;
-}
-.detaly_black {
-	background: url(../img/new_img/ICON_detaly_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .detaly, .left-menu > ul > li.active .detaly_black, .left-menu > ul > li > a:hover .detaly_black{
-	background: url(../img/new_img/ICON_detaly_h.png) 50% 50% no-repeat;
-}
-.gidranty {
-	background: url(../img/new_img/ICON_gidranty.png) 50% 50% no-repeat;
-}
-.gidranty_black {
-	background: url(../img/new_img/ICON_gidranty_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .gidranty, .left-menu > ul > li.active .gidranty_black, .left-menu > ul > li > a:hover .gidranty_black{
-	background: url(../img/new_img/ICON_gidranty_h.png) 50% 50% no-repeat;
-}
-.germetizacija {
-	background: url(../img/new_img/ICON_germetizacija.png) 50% 50% no-repeat;
-}
-.germetizacija_black {
-	background: url(../img/new_img/ICON_germetizacija_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .germetizacija, .left-menu > ul > li.active .germetizacija_black, .left-menu > ul > li > a:hover .germetizacija_black{
-	background: url(../img/new_img/ICON_germetizacija_h.png) 50% 50% no-repeat;
-}
-.elektroprivody {
-	background: url(../img/new_img/ICON_elektroprivody.png) 50% 50% no-repeat;
-}
-.elektroprivody_black {
-	background: url(../img/new_img/ICON_elektroprivody_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .elektroprivody, .left-menu > ul > li.active .elektroprivody_black, .left-menu > ul > li > a:hover .elektroprivody_black{
-	background: url(../img/new_img/ICON_elektroprivody_h.png) 50% 50% no-repeat;
-}
-.ostalnoe {
-	background: url(../img/new_img/ICON_ostalnoe.png) 50% 50% no-repeat;
-}
-.ostalnoe_black {
-	background: url(../img/new_img/ICON_ostalnoe_b.png) 50% 50% no-repeat;
-}
-.red_menu_block .link-block:hover .ostalnoe, .left-menu > ul > li.active .ostalnoe_black, .left-menu > ul > li > a:hover .ostalnoe_black{
-	background: url(../img/new_img/ICON_ostalnoe_h.png) 50% 50% no-repeat;
-} */
 .left-menu ul ul li a {
     color: #333333;
 }
@@ -5650,20 +6027,20 @@ background-image: url(../img/new_img/SVG/white/icon-01.svg);
     cursor: pointer;
     background-color: #edeef2;
     color: #333333;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .delete_fort_item:before {
     content: "";
     display: inline-block;
     position: absolute;
-    background: url(../img/icons.png) 0 -918px no-repeat;
+    background: url(https://www.armprof.ru/design/default/img/icons.png) 0 -918px no-repeat;
     width: 4px;
     height: 9px;
     right: 15px;
     margin-top: -4px;
     top: 50%;
-    background: url(../img/icons.png) 0 -842px no-repeat;
+    background: url(https://www.armprof.ru/design/default/img/icons.png) 0 -842px no-repeat;
     width: 8px;
     height: 9px;
 }
@@ -5696,7 +6073,7 @@ background-image: url(../img/new_img/SVG/white/icon-01.svg);
 
 .new_left_form .filter-select-wrp .filter-head {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .filter_btn {
@@ -5848,7 +6225,7 @@ a.pagination-item:focus {
 
 .red_ul {
     color: red;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .red_ul * {
@@ -5869,7 +6246,7 @@ a.pagination-item:focus {
     display: block;
     position: absolute;
     content: "";
-    background: url("../img/new_img/icon_print.png");
+    background: url("https://www.armprof.ru/design/default/img/new_img/icon_print.png");
     width: 28px;
     height: 28px;
     right: 0;
@@ -5880,11 +6257,7 @@ a.pagination-item:focus {
     text-decoration: none !important;
 }
 
-.tabs-content {
-/*    display: table;
-*/}
-
-.select_dn {
+/*.select_dn {
     margin-top: 5px;
     padding-left: 0;
     position: relative;
@@ -5892,6 +6265,36 @@ a.pagination-item:focus {
 
 .select_dn .jq-selectbox__select {
     padding-left: 25px;
+}
+
+.select_dn .jq-selectbox {
+    width: 100%;
+}*/
+
+.select_dn {
+    flex-basis: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 0;
+    position: relative;
+    width: 100%;
+    border: 1px solid #ecedf1;
+}
+
+.select_dn:before {
+    display: none;
+    position: absolute;
+    content: "";
+    background: url(../img/new_img/icon_d.png);
+    width: 17px;
+    height: 17px;
+    left: 1px;
+    top: 5px;
+    z-index: 100;
+}
+
+.select_dn .jq-selectbox__select {
+    padding-left: 15px;
 }
 
 .select_dn .jq-selectbox {
@@ -5914,7 +6317,7 @@ a.pagination-item:focus {
 .select_dn .jq-selectbox__select-text {
     color: #333333;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: -0.8px;
 }
 
@@ -5926,18 +6329,18 @@ a.pagination-item:focus {
     right: 18px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url('../img/new_img/icon-arrow-down.png');
+    background-image: url('https://www.armprof.ru/design/default/img/new_img/icon-arrow-down.png');
 }
 
-.select_dn .jq-selectbox__select-text::before {
+/*.select_dn .jq-selectbox__select-text::before {
     content: '';
     position: absolute;
     width: 17px;
     height: 17px;
     left: 0;
     top: 5px;
-    background-image: url(../img/new_img/icon_d.png);
-}
+    background-image: url(https://www.armprof.ru/design/default/img/new_img/icon_d.png);
+}*/
 
 .select_dn .jq-selectbox__trigger-arrow {
     top: 11px;
@@ -5972,28 +6375,28 @@ a.pagination-item:focus {
     font-size: 12px;
     line-height: 1.1;
     letter-spacing: -0.3px;
-    white-space: pre-line;
 }
 
 .download-price span {
     display: block;
     width: 92px;
+    white-space: pre-line;
 }
 
 .download-red-after,
 .download-blue-after {
-    text-align: left;
+    text-align: right;
 }
 
 .download-red-before,
-.donwload-blue-before {
-    text-align: right;
+.download-blue-before {
+    text-align: left;
 }
 
 .download-red-after::after {
     content: '';
     display: block;
-    background-image: url('../img/new_img/icon_price.png');
+    background-image: url('https://www.armprof.ru/design/default/img/new_img/icon_price.png');
     width: 35px;
     height: 35px;
     margin-left: 18px;
@@ -6005,7 +6408,7 @@ a.pagination-item:focus {
     display: block;
     width: 35px;
     height: 35px;
-    background-image: url('../img/new_img/icon_download.png');
+    background-image: url('https://www.armprof.ru/design/default/img/new_img/icon_download.png');
 }
 
 .download-red-before::before {
@@ -6014,7 +6417,7 @@ a.pagination-item:focus {
     width: 35px;
     height: 35px;
     margin-right: 12px;
-    background-image: url("../img/new_img/icon_price.png");
+    background-image: url("https://www.armprof.ru/design/default/img/new_img/icon_price.png");
 }
 
 .download-blue-before::before {
@@ -6023,14 +6426,14 @@ a.pagination-item:focus {
     width: 35px;
     height: 35px;
     margin-right: 12px;
-    background-image: url('../img/new_img/icon_download.png');
+    background-image: url('https://www.armprof.ru/design/default/img/new_img/icon_download.png');
 }
 
 .download-red-after:hover::after,
 .download-price-blue:hover::after,
 .download-red-before:hover::before,
 .download-blue-before:hover::before  {
-    background: url('../img/new_img/icon_download_h.png');
+    background: url('https://www.armprof.ru/design/default/img/new_img/icon_download_h.png');
 }
 
 
@@ -6060,7 +6463,25 @@ a.pagination-item:focus {
     width: 250px;
     float: right;
     text-align: center;
-    margin-top: 10px;
+    margin-topf: 10px;
+}
+
+.numer_block .inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.numer_block .counter {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 }
 
 .numer_block .ticker {
@@ -6135,24 +6556,19 @@ a.pagination-item:focus {
 }
 
 .numer_block {
-    margin-top: 10px;
     display: block;
     float: left;
 }
 
 .numer_block label {
-    display: block;
-    float: left;
-    line-height: 30px;
-    font-size: 18px;
-    /*font-family: "lato-bold";*/
-    font-weight: bold;
+    line-height: 1.2;
+    font-size: 14px;
+    font-weight: 600;
     margin-right: 15px;
-    /*text-transform: uppercase;*/
 }
 
 .style-select b {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .style-select select {
@@ -6192,7 +6608,7 @@ a.pagination-item:focus {
 
 /*
 #producer_slider{
-	height: 600px !important;
+    height: 600px !important;
 }
 */
 .producer-slider-list {
@@ -6208,7 +6624,7 @@ a.pagination-item:focus {
     border-bottom: dashed 1px #24b9e0;
     margin-left: 35px;
     position: relative;
-    font-weight: 700;
+    font-weight: 600;
     padding-top: 11px;
 }
 
@@ -6216,7 +6632,7 @@ a.pagination-item:focus {
     display: block;
     position: absolute;
     content: "";
-    background: url(../img/new_img/ICON_tel.png);
+    background: url(https://www.armprof.ru/design/default/img/new_img/ICON_tel.png);
     width: 23px;
     height: 25px;
     left: -35px;
@@ -6242,7 +6658,9 @@ a.pagination-item:focus {
 
 .callback_block {
     display: table;
-    width: 100%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px
 }
 
@@ -6276,6 +6694,10 @@ a.pagination-item:focus {
     text-decoration: underline;
 }
 
+
+.breadcrums + .cols4 {
+    margin-top: 20px;
+}
 
 .cols4 .item {
     border-left: 1px solid #ecedf1;
@@ -6326,7 +6748,7 @@ a.pagination-item:focus {
     display: block;
     font-weight: 700;
     text-transform: uppercase;
-    background: url(../img/new_img/ICON_menu.png) 0 50% no-repeat;
+    background: url(https://www.armprof.ru/design/default/img/new_img/ICON_menu.png) 0 50% no-repeat;
     cursor: pointer;
     display: none;
 }
@@ -6342,7 +6764,7 @@ a.pagination-item:focus {
 }
 
 .top-sliders {
-    background: #1a5a96 url(../img/maket-img/main-slider-bg.jpeg) 50% 0 no-repeat;
+    background: #1a5a96 url(https://www.armprof.ru/design/default/img/maket-img/main-slider-bg.jpeg) 50% 0 no-repeat;
     display: block;
     width: 100%;
     height: 380px;
@@ -6382,7 +6804,7 @@ a.pagination-item:focus {
     margin-left: 73px;
     line-height: 17px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     padding-right: 25px;
 }
@@ -6394,7 +6816,7 @@ a.pagination-item:focus {
 }
 
 .top-sliders a .video-item-play-ico {
-    background: url(../img/icons.png) 0 -407px no-repeat;
+    background: url(https://www.armprof.ru/design/default/img/icons.png) 0 -407px no-repeat;
     width: 53px;
     height: 53px;
     display: inline-block;
@@ -6435,7 +6857,7 @@ a.pagination-item:focus {
 .slide_bott {
     display: table;
     margin: 0 auto;
-    background: url(../img/new_img/arrow-down-w.png) 50% 50% no-repeat;
+    background: url(https://www.armprof.ru/design/default/img/new_img/arrow-down-w.png) 50% 50% no-repeat;
     width: 20px;
     height: 20px;
     border: white solid 2px;
@@ -6475,6 +6897,7 @@ a.pagination-item:focus {
 
 .producer-block {
     margin-left: -15px;
+    margin-bottom: 50px;
 }
 
 ul.slick-dots {
@@ -6494,7 +6917,7 @@ p.producer-name {
 p.producer-type {
     font-size: 14px;
     color: #333333;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 25px;
     height: 70px;
 }
@@ -6530,12 +6953,14 @@ p.producer-type {
     font-size: 12px
 }
 
+.plan li {
+    margin-bottom: 10px;
+}
+
 .embed-responsive {
   display: block;
   position: relative;
   width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
   padding: 0;
   overflow: hidden
 }
@@ -6559,4 +6984,388 @@ p.producer-type {
 
 .embed-responsive--4-3::before {
   padding-top: 75%
+}
+
+/*
+* Модальное окно
+*/
+
+.js-modal-open {
+  overflow: hidden
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch
+}
+
+.js-modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto
+}
+
+.modal__dialog {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  margin: 0
+}
+
+.modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  outline: 0
+}
+
+.modal__header {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 0 40px 0 15px
+}
+
+.modal__title {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: currentColor
+}
+
+.modal__close {
+  position: absolute !important;
+  top: 5px;
+  right: 5px
+}
+
+.modal__body {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 15px
+}
+
+.modal__footer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 15px
+}
+
+.modal__backdrop {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .7)
+}
+
+@-webkit-keyframes modal-backdrop-show {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes modal-backdrop-show {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes modal-content-show {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2em);
+    transform: translateY(-2em)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@keyframes modal-content-show {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2em);
+    transform: translateY(-2em)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+/*.tippy-tooltip.cart-theme {
+  padding: 10px 7px;
+  -webkit-box-shadow: 0 2px 24px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 2px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000; }*/
+
+/*
+* Модалки корзины и избранного
+*/
+.tippy-box[data-theme~='list'] {
+  -webkit-box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  color: #333;
+  max-height: 456px;
+  overflow-y: scroll; }
+.tippy-box[data-theme~='list'] .tippy-content {
+    padding: 22px 24px 24px;
+}
+.tippy-box[data-theme~='list'] .modal__header {
+    padding: 0;
+}
+.tippy-box[data-theme~='list'] .modal__title {
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+.modal-list--empty .modal__dialog {
+  width: 304px;
+  height: 248px; }
+.modal-list--empty .modal__title {
+  width: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0; }
+.modal-list .modal__dialog {
+  width: 304px;
+  height: 456px;
+  overflow-y: scroll; }
+.modal-list__item {
+  width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+    margin-bottom: 17px;
+}
+.modal-list__img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+.modal-list__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    -o-object-position: left top;
+       object-position: left top;
+    font-family: "object-fit:scale-down;object-position:left top", "object-fit: scale-down; object-position: left top;"; }
+.modal-list__info {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #edeef2;
+}
+.modal-list__desc {
+    width: 170px;
+    font-size: 13;
+    letter-spacing: -0.65px;
+}
+.modal-list__title {
+  display: block;
+  position: relative;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333333;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+.modal-list__title:focus, 
+.modal-list__title:hover {
+    color: #f00;
+}
+.modal-list__price {
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    color: #f00;
+}
+.modal-list__price .rubl {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.85px;
+}
+.modal-list__diameter {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #a7aeb8;
+}
+.modal-list--cart .modal-list__title {
+  margin-right: 0; }
+.modal-list--cart .modal__dialog {
+  height: auto;
+  overflow: visible; }
+
+.modal-list__result {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    -ms-align-items: baseline;
+    align-items: baseline;
+    margin-bottom: 35px;
+}
+
+.modal-list__btns {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-list__btns .btn--link {
+    padding: 10px 15px 12px 15px;
+}
+
+.modal-list__btns .btn--link:hover {
+    color: #f00;
+}
+
+.modal-list__btns .btn--main {
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+}
+
+.modal-list__total-lbl {
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -0.65px;
+}
+
+.modal-list__total-val {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    color: #f00;
+}
+
+.tooltip-inner--favorite .modal-list__item:last-child .modal-list__info {
+    border-bottom: none;
+}
+
+/*
+*
+*/
+
+.category-compare {
+    width: 100%;
+}
+
+.category-compare-spec td {
+    padding: 5px;
+}
+
+/*.category-compare {
+    display: grid;
+}
+
+.category-item {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.category-tech {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}*/
+
+.category-compare-spec td {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.category-compare-spec td:first-child {
+    color: #747a81;
+}
+
+/*.category-row {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-template-columns: auto;
+}*/
+
+
+.alert {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 25px 20px 15px;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.16);
+    z-index: 100;
+}
+
+.alert .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

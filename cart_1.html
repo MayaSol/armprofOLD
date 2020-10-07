@@ -35,12 +35,12 @@
     <script type="text/javascript" src="https://lab01.ru/js/api_js.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-46754667-3', 'auto');
-        ga('send', 'pageview');
-    </script>
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-46754667-3', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 
 <body>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="search-example">
                     <p>Например:</p>
-                    <a href="/catalog/zatvory-diskovye-povorotnye/">затвор дисковый</a>
+                    <a href="/catalog/mufty-soedinitelnye/IGE-UNIVERSAL-BF/">дрк universal ige bf</a>
                 </div>
             </div>
             <div class="header-phones-block">
@@ -118,28 +118,55 @@
                 </div>
             </div>
             <div class="header-cart-block">
-                <ul class="action-btn-list">
-                    <li>
-                        <a href="/Index.php?module=favorite" class="action-btn btn--favorite has-tooltip has-tooltip--favorite active"><span>Избранное</span><span id="count-fav-prod" class="action-amount">2</span></a>
-                    </li>
-                    <li id='CartInfo'>
-                        <script type="text/javascript" src="/design/default/js/WCart.js"></script><!-- Виджет корзины -->
-                        <a class="action-btn btn--cart has-tooltip has-tooltip--cart active"><span>Корзина</span><span class="action-amount">0</span></a>
-                        <div class="tooltip-empty tooltip" style="display:none">
-                            <div class="tooltip-inner tooltip-inner--cart modal-list modal-list--empty">
-                                <div class="modal__header">
-                                    <h4 class="modal__title">Ваша корзина пока пуста...</h4>
-                                </div>
-                                <div class="tooltip-content"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="/Index.php?module=compare" class="action-btn btn--compare"><span>Сравнение</span><span class="action-amount">0</span></a>
-                        <div id='CompareInfo' style='display:none'></div>
-                    </li>
-                </ul>
-                <a href="/price_list/armprof_price.xls" class="download-price download-red-after" onclick="yaCounter18939763.reachGoal('price_download'); return true;"><span>Скачать прайс на 04.10.2020</span></a>
+			<ul class="action-btn-list">
+			    <li>
+			        <a href="/Index.php?module=favorite" class="action-btn btn--favorite has-tooltip has-tooltip--favorite active"><span>Избранное</span><span id="count-fav-prod" class="action-amount">0</span></a>
+			    </li>
+			    <li id="CartInfo"><a class="action-btn btn--cart has-tooltip has-tooltip--cart active"><span>Корзина</span><span class="action-amount">1</span></a>
+			        <div class="tooltip tooltip--cart" style="display:none">
+			            <div class="tooltip-inner tooltip-inner--cart">
+			                <div class="modal__header">
+			                    <h4 class="modal__title">Ваши покупки</h4>
+			                </div>
+			                <ul class="modal-list">
+			                    <li class="modal-list__item">
+			                        <div class="modal-list__img">
+			                            <img src="/images/items/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300.jpg">
+			                        </div>
+			                        <div class="modal-list__info">
+			                            <div class="modal-list__desc">
+			                                <a class="modal-list__title" href="">Клиновая задвижка фланцевая упругозапирающая DOMEX F4 x 1</a>
+			                                <span class="modal-list__diameter">common</span>
+			                            </div>
+			                            <div class="modal-list__price">0<span class="rubl">₽</span></div>
+			                            <button class="btn btn--close modal-list__close"></button>
+			                        </div>
+			                    </li>
+			                </ul>
+			                <div class="modal-list__result">
+			                    <span class="modal-list__total-lbl">Общая сумма:</span>
+			                    <span class="modal-list__total-val">0 <span class="rubl">₽</span></span>
+			                </div>
+			                <div class="modal-list__btns">
+			                    <button class="btn btn--main PredCont">Оформить заказ</button>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="tooltip-empty tooltip" style="display:none">
+			            <div class="tooltip-inner tooltip-inner--cart modal-list modal-list--empty">
+			                <div class="modal__header">
+			                    <h4 class="modal__title">Ваша корзина пока пуста...</h4>
+			                </div>
+			                <div class="tooltip-content"></div>
+			            </div>
+			        </div>
+			    </li>
+			    <li>
+			        <a href="/Index.php?module=compare" class="action-btn btn--compare"><span>Сравнение</span></a>
+			        <div id="CompareInfo" style="display:none"></div>
+			    </li>
+			</ul>
+                <a href="/price_list/armprof_price.xls" class="download-price download-red-after" onclick="yaCounter18939763.reachGoal('price_download'); return true;"><span>Скачать прайс на 30.09.2020</span></a>
             </div>
         </header>
         <div class="for_red_menu">
@@ -2659,7 +2686,7 @@
                                 </div>
                                 <div class="category-item-btns">
                                     <button title="Добавить в корзину" class="btn btn--main btn--buy add-to-cart" data-id="293">Купить</button>
-                                    <button title="Добавить в смету" class="btn btn--favorite" onclick="add_to_fav('293', this)"></button>
+                                    <button title="Добавить в смету" class="btn btn--favorite" onclick="add_to_fav('293')"></button>
                                     <button title="Добавить в сравнение" class="btn btn--compare add-to-compare" data-id="293"></button>
                                 </div>
                             </div>
@@ -3146,10 +3173,6 @@
     <div id="dialog" title="Заявка" style="display: none;"></div>
     <div id="Dialog2"></div>
     <div id="Dialog3"></div>
-<!--     <div class="alert">
-        Товар <a href="https://tt-comp.ru/products/vlagozashishennaya-klemma-m24/">Влагозащищенная клемма М24</a> добавлен в <a href="https://tt-comp.ru/index.php?route=checkout/cart">корзину покупок</a>!
-        <button type="button" class="close">×</button>
-    </div> -->
     </div>
     <!-- end total-wrp -->
     <script type="text/javascript" src="/design/default/js/functions.js"></script>

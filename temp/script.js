@@ -400,7 +400,13 @@ $(function() {
 // Найти шаблон для отображения в поп-ап
 var getTemplate = function(cartBtnElem,templateSelector) {
 
+	console.log('getTemplate');
+	console.log(cartBtnElem);
+	console.log(templateSelector);
+
     var template = $(cartBtnElem).siblings(templateSelector);
+    console.log('template: ');
+    console.log(template);
 
     // if (!elem.classList.contains('active')) {
     //     var template = $(elem).siblings('.tooltip-empty');
@@ -415,10 +421,16 @@ var getTemplate = function(cartBtnElem,templateSelector) {
 
 var setCartTooltip = function(btn) {
 
+    console.log('setCartTooltip');
+    console.log(btn);
+
     var template = getTemplate(btn, '.tooltip--cart');
     if (template.length == 0) {
 		template = getTemplate(btn, '.tooltip-empty');
     }
+
+    console.log('template');
+    console.log(template);
 
     if (template.length > 0) {
         var tooltipCartOpt = {
@@ -459,9 +471,14 @@ var setFavTooltip = function(btn) {
 
 //мультиселект чекбоксы
 $(document).ready(function() {
+    console.log('script.js document ready');
 
     const tooltipsCart = document.querySelectorAll('.has-tooltip--cart');
+    console.log('tooltipsCart');
+    console.log(tooltipsCart);
 
+
+    /*!!!! УБРАТЬ КОММЕНТАРИИ !!!*/
     for (let i = 0; i < tooltipsCart.length; i++) {
         setCartTooltip(tooltipsCart[i]);
     }
@@ -856,10 +873,16 @@ $(document).ready(function() {
     //Показать больше. Фильтр диаметр.
     $('.filter-values .btn--show-all').click(function(event) {
         var parent = $(this).closest('.filter-values');
+        // console.log('parent');
+        // console.log(parent);
+        // console.log(!($(parent).hasClass('show-all')));
         if (!($(parent).hasClass('show-all'))) {
             $(parent).addClass('show-all');
         }
         var parent = $(this).closest('.category-filter-form');
+        // console.log('parent');
+        // console.log(parent);
+        // console.log(!($(parent).hasClass('show-all')));
         if (!($(parent).hasClass('show-all'))) {
             $(parent).addClass('show-all');
         }
@@ -925,11 +948,6 @@ $(document).ready(function() {
         // }    
     }
 
-    // Убрать сообщение из разметки
-    // $('.alert .close').click(function() {
-    // 	console.log(this);
-    // 	$(this).closest('.alert').remove();
-    // })
 
 
     /*END*/
@@ -969,37 +987,11 @@ function show_reg_sel() {
     }
     return false;
 }
-
-
-var showAlert = function(text) {
-   	$('.alert').remove();
-    $('footer').after('<div class="alert">' + text + '<button type="button" class="close">&times;</button></div>');
-    $('.alert .close').click(function() {
-    	$(this).closest('.alert').remove();
-    });
-}
-
-
-var loadFunc = function() {
-
-	const tooltipsCart = document.querySelectorAll('.has-tooltip--cart');
-
-	for (let i = 0; i < tooltipsCart.length; i++) {
-	    setCartTooltip(tooltipsCart[i]);
-	}
-}
-
-
 $('.add-to-compare').live('click', function() {
-
     var variant = $(this).data("id");
-    var desc = $(this).closest('.category-item').find('.ct-discript').html();
-
     if (variant > 0) {
-        $('#CompareInfo').load("/classes/ajax/AjaxUpdate.php", { update: 'compare', id: variant }, function(response, status, xhr) {
-			if ( status == "success" ) {
-				showAlert('Товар ' + desc + ' добавлен в сравнение.');
-			}
+        $('#CompareInfo').load("/classes/ajax/AjaxUpdate.php", { update: 'compare', id: variant }, function() {
+
         });
     }
 });
@@ -1007,7 +999,6 @@ $('.add-to-compare').live('click', function() {
 
 $('.add-to-cart').live('click', function() {
 
-    var desc = $(this).closest('.category-item').find('.ct-discript').html();
 
     var variant = $(this).data("id");
     if (variant > 0) {
@@ -1023,26 +1014,20 @@ $('.add-to-cart').live('click', function() {
         if ($("*").is(".price" + variant)) {
             price = $(".price" + variant).text();
         }
-        $('#CartInfo').load("/classes/Sibloma.php", { ajaxCart: 'ok', variant: variant, amounts: amount, type: type, price: price }, function(response, status, xhr) {
-			if ( status == "success" ) {
-	        	loadFunc();
-	        	showAlert('Товар ' + desc + ' добавлен в корзину.');
-			}
+        $('#CartInfo').load("/classes/Sibloma.php", { ajaxCart: 'ok', variant: variant, amounts: amount, type: type, price: price }, function() {
+				for (let i = 0; i < tooltipsCart.length; i++) {
+			        setCartTooltip(tooltipsCart[i]);
+			    }
         });
     }
 });
 
-function add_to_fav(id, btn) {
-
-    var desc = $(btn).closest('.category-item').find('.ct-discript').html();
-
+function add_to_fav(id) {
     jQuery.ajax({
         url: "/?module=favorite&par=add",
         type: "POST",
         data: { id: id },
         success: function(response) {
-        	loadFunc();
-        	showAlert('Товар ' + desc + ' добавлен в избранное.');
             $("#count-fav-prod").text(response);
         }
     });
